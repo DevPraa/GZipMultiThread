@@ -15,11 +15,11 @@ namespace Test
         {
             GZipUtils.GZipUtils Zipper = new GZipUtils.GZipUtils();
             Zipper.CountThreads = (uint)Environment.ProcessorCount;
-            Zipper.SizePart = (uint)Math.Pow(2, 5);
+            Zipper.SizePart = (uint)Math.Pow(2, 20);
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            //Zipper.Compress(@"F:\data2.bin", @"F:\data2.GZP");
             Zipper.Compress(@"F:\07. Тип string.mp4", @"F:\07. Тип string.GZP");
+            Zipper.Decompress(@"F:\07. Тип string.GZP", @"F:\07. Тип string1.mp4");
             stopwatch.Stop();
             Console.WriteLine($"Time : {stopwatch.Elapsed}");
 

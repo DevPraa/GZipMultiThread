@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\GZipUtils.csproj">
+    <ProjectReference Include="..\GZipMutliThread\GZipUtils.csproj">
       <Project>{64921767-e71c-4a6c-9ca7-6a8d12fb8dcf}</Project>
       <Name>GZipUtils</Name>
     </ProjectReference>
